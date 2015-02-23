@@ -18,3 +18,19 @@ img {
 	border: 1px #aaa solid;
 	padding: 2px;
 }
+
+}
+
+div{
+	padding: 10px;
+}
+
+div.row{
+	padding:5px;
+	margin: 5px;
+	border-bottom: 2px #0000ff dashed;
+}
+
+.events{
+	width: 200%;
+ }

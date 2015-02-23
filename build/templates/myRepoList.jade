@@ -1,0 +1,5 @@
+each item in items
+	div.row
+		div.six.columns
+			a(href="#", onClick='myRepoView("' + item.full_name + '")')
+				= item.full_name

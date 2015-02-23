@@ -1,0 +1,16 @@
+h3= user + " 15 recent events"
+each item in items
+	div.row(class="events")
+		div.three.columns
+			= item.repo.name
+		div.three.columns
+			= item.type
+		div.three.columns
+			= item.created_at
+		div.one.columns
+			if item.public
+				= "Public"
+			else
+				= "Private"
+		div.two.columns
+			= item.id
