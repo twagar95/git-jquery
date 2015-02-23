@@ -12,7 +12,7 @@ Git One Page Client-side App
 
 
 # url
-https://github.com/twagar95/git-jquery
+http://twagar95.github.io/git-jquery/
 
 # points
 50/50
