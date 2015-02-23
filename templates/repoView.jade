@@ -1,1 +1,53 @@
-h5= item.full_name
+h5= item.name
+
+p
+  a(href=item.html_url target="_blank")
+    = item.html_url
+
+p
+  if item.description == ""
+    = "No description was given."
+  else
+    = item.description
+
+p
+  if item.private
+    = "This is a private repo written in part with " + item.language
+  else
+    = "This is a public repo written in part with " + item.language
+
+p
+  if item.fork
+    = "This is a fork! This repo has been forked " + item.forks_count + " times."
+  else
+    = "This is not a fork. This repo has been forked " + item.forks_count + " times."
+
+table
+  tr
+    td Created At
+    td= item.created_at
+  tr
+    td Last Updated
+    td= item.updated_at
+  tr
+    td Last Pushed
+    td= item.pushed_at
+
+table
+  tr
+    td Owned By
+    td= item.owner.login
+  tr
+    td Owner ID
+    td= item.owner.id
+
+table
+  tr
+    td Watchers Count
+    td= item.watchers_count
+  tr
+    td Stargazers Count
+    td= item.stargazers_count
+  tr
+    td # of Issues
+    td= item.open_issues_count
